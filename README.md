@@ -8,11 +8,14 @@ This tool creates a D2RMM-compatible mod from multiple .txt files. Here's how it
 4. These output files will recreate your source files exactly when used with D2RMM.
 
 **Key Benefits:**
-- Allows integration with other D2RMM mods
-- Works with open-source mods only
-- Supports .txt files, not binary (.bin) files
+- Ideal for mod developers who create hardcoded mods using .txt files and want to convert them into D2RMM-compatible files.
+- Allows integration with other D2RMM mods.
+- Works with open-source mods only.
+- Supports .txt files, not binary (.bin) files.
 
 **Important Considerations:**
+- The tool cannot handle strings or UI elements—only .txt files are supported.
+- It has not been extensively tested, so there may be edge cases where it doesn't work as expected.
 - The tool may not work correctly if your source files are corrupted or contain unusual characters.
 - For added peace of mind, you may want to scan "convert_modfiles.exe" with a virus scanner before use.
 - The source code for this tool is also attached for transparency and review.
