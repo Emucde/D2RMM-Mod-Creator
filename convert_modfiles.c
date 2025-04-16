@@ -92,15 +92,13 @@ void escape_quotes(char* str) {
 }
 
 void remove_newline(char* str) {
-    char* src = str;
-    char* dst = str;
-    while (*src) {
-        if (*src != '\n') {
-            *dst++ = *src;
-        }
-        src++;
+    size_t len = strlen(str);
+    if (len > 0 && str[len - 1] == '\n') {
+        // Replace '\n' with '\', 'r', and '\0'
+        str[len - 1] = '\\';
+        str[len] = 'r';
+        str[len + 1] = '\0';
     }
-    *dst = '\0'; // Null-terminate the modified string
 }
 
 // Function to convert a string to lowercase
