@@ -8,7 +8,7 @@
 #define MAX_FILENAME 256
 
 #define MAX_LINE_LENGTH 409600
-#define MAX_FIELDS 20000
+#define MAX_FIELDS 10000
 
 int get_txt_files(char files[][MAX_FILENAME]) {
     WIN32_FIND_DATA findFileData;
